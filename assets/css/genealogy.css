@@ -1,0 +1,64 @@
+/* @override http://local/dev/devwordpress/wp-content/plugins/genealogy/css/genealogy.css?ver=3.1 */
+
+/*table.sex_female caption { background-color:lightpink; }
+table.sex_male caption { background-color:lightblue; }*/
+
+
+table caption {
+	position: relative;
+}
+td.genealogy_row_name a span,
+table caption span {
+	display: block;
+	display: inline-block;
+	text-align: left;
+	text-indent: -9999px;
+	background-color: transparent;
+	margin: 0;
+	overflow: hidden;
+	width: 16px;
+	min-height: 16px;
+	height:16px;
+	position: absolute;
+	top:  .25em;
+	margin-left: .5em;
+}
+td.genealogy_row_name a {
+	position: relative;
+}
+td.genealogy_row_name a span {
+	position: absolute;
+	margin-left: .5em;
+	top: 0.1em;
+}
+td.genealogy_row_name span.sex_male,
+.sex_male caption span {
+	background: url('../images/male.png') 100% right no-repeat;
+}
+td.genealogy_row_name span.sex_female,
+.sex_female caption span {
+	background: url('../images/female.png') 100% right no-repeat;
+}
+
+table.genealogy_relationships_table th,
+table.genealogy_relationships_table td {
+	vertical-align: middle;
+	border-collapse: collapse;
+	padding: 5px 7px!important;
+}
+
+table.genealogy_relationships_table th.genealogy_row_image,
+table.genealogy_relationships_table td.genealogy_row_image {
+	width: 1px;
+	text-align: center;
+	padding: 0!important;
+}
+table.genealogy_relationships_table td.genealogy_row_image {
+	text-align: center;
+}
+table.genealogy_relationships_table tr td.genealogy_row_image img {
+	padding: 5px 15px 0!important;
+	height: 50px!important;
+	max-width: 50px!important;
+	text-align: center;
+}

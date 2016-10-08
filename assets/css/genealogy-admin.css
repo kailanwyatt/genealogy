@@ -1,0 +1,231 @@
+/* @override http://local/dev/devwordpress/wp-content/plugins/genealogy/css/genealogy-admin.css?ver=3.1 */
+
+#icon-edit, #icon-post {
+	/* Icon courtesy of http://www.iconarchive.com/show/people-icons-by-aha-soft/user-group-icon.html */
+	background: transparent url(../images/group32.png) no-repeat left top;
+}
+
+.ui-datepicker { z-index: 9999; }
+#family-member-data-div .inside,
+#family-member-data-div .inside label
+ {
+	font-size: 12px;
+}
+
+
+#poststuff .inside fieldset p {
+	margin: 0;
+	padding: 0;
+}
+
+#family-member-data-div fieldset {
+	position: relative;
+	padding: 1%;
+	display: block;
+	padding-bottom: 20px;
+	/*border: 1px solid #ccc;*/
+	/*border: 1px solid #eee;*/
+}
+
+#family-member-data-div fieldset.living,
+#family-member-data-div fieldset.birth {
+	padding-bottom: 0;
+}
+
+#family-member-data-div legend {
+	text-align: left;
+	font-weight: normal;
+	color: #464646;
+	font: italic normal normal 16px/18px Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+	line-height: 22px;
+	margin: 0px;
+	padding: 0;
+	padding-top: 14px;
+	/*text-indent: 5px;*/
+}
+#family-member-data-div fieldset.alignleft {
+	float: left;
+	width: 47%;
+	padding-right: 2%;
+	border-right: 1px solid #eee;
+} 
+#family-member-data-div fieldset.alignright {
+	float: right;
+	width: 47%;
+}
+
+
+#family-member-data-div fieldset.clear,
+#family-member-data-div fieldset div.clone,
+#family-member-data-div fieldset div.block,
+#family-member-data-div fieldset.aligncenter {
+	margin:0;
+	clear: both;
+	width: 100%;
+}
+
+#family-member-data-div fieldset.spouses {
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	/*float: ;*/
+	overflow: hidden;
+}
+#family-member-data-div fieldset.additional-information legend {
+	border-top: 1px solid #ececec;
+	width: 100%;
+	float: left;
+	
+}
+div.timespan {
+	display: none;
+	clear: left;
+	width: 94.5%;
+	margin: 0;
+	background-color: #fdfdfd;
+	padding: 10px 1% 2.5em 2.5%;
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+.timespan_reason {
+	display: none;
+	margin-left: 1.5em;
+}
+span.leaveblank {
+	position: absolute;
+	bottom: -2.5em;
+	font-size: 11px;
+	width: 100%;
+	left: 0;
+}
+.timespan_to  {
+	position: relative;
+}
+#family-member-data-div div.block,
+#family-member-data-div div.clone {
+	position: relative;
+	padding-top: 15px;
+}
+
+div.block input.text,
+div.clone input.text {
+	width: 65%;
+	padding: 5px;
+}
+
+fieldset.additional-information div.block label,
+fieldset.additional-information div.clone label {
+	width: 100%;
+}
+
+span.input-label {
+	float: left;
+	width: 15%;
+	padding: 5px 2% 5px 0;
+}
+fieldset.alignleft span.input-label,
+fieldset.alignright span.input-label {
+	/*min-width: 5em;*/
+	width: 20%;
+	/*max-width: 500px;*/
+}
+/*fieldset.alignleft input.text,
+fieldset.alignright input.text {
+	width: 65%;
+	padding: 5px 2.5%;
+}*/
+
+.parents p {
+	float: left;
+}
+.spouses .clone {
+	/*padding-bottom: 10px;*/
+	/*border-bottom: 1px solid #ccc;*/
+	float:left;
+}
+label.mother,label.father,
+label.wife, label.husband {
+	float: left;
+	width: 65%;
+	padding-bottom: 15px;
+}
+label.mother,label.father {
+	width: 100%;
+}
+label.timespan_checked {
+	float: left;
+	padding: .25em 20px;
+}
+.parents select,
+label.wife select, label.husband select {
+	float: right;
+	width: 80%;
+	clear: none;
+}
+label.mother span,label.father span,
+label.wife span.alignleft, label.husband span.alignleft {
+	float: left;
+	padding: .25em 0 .25em 0;
+	text-align: left;
+	color: #777;
+}
+.add_remove {
+	position: absolute;
+	/*right: 10px;*/
+	top: 1.75em;
+	width: 50px;
+}
+.spouses .add_remove {
+	right: 10px;
+	margin-top: -.25em;
+}
+
+.ir,
+label.sex span,
+label.living span {
+	display: block;
+	display: inline-block;
+	text-align: left;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background: transparent;
+	margin: 0;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+}
+#family-member-data-div fieldset.death {
+	display: none;
+}
+.ir a {
+	display: block; width:100%; height:100%; float:left;
+}
+.genealogy_add {
+	background: url('../images/add.png');
+}
+.genealogy_remove {
+	background: url('../images/delete.png');
+	margin-left: 3px;
+}
+
+label.sex,
+label.living {
+	padding-left: 18px; 
+	text-indent: 0;
+	width: auto;
+	clear: left;
+	height: auto;
+	overflow: visible;
+	display: block;
+	
+}
+label.sex_male span {
+	background: url('../images/male.png');
+}
+label.sex_female span {
+	background: url('../images/female.png');
+}
+label.sex_other span {
+	width: 0;
+}
